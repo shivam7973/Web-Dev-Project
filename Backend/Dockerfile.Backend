@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN npm install -g json-server
 
-COPY Backend/db.json ./db.json
+COPY Backend/db.json .
 
 EXPOSE 2000
 
