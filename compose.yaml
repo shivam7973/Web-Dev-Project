@@ -4,7 +4,7 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.fronted
     container_name: react-frontend
     ports:
       - "80:80"
@@ -13,8 +13,8 @@ services:
 
   backend:
     build:
-      context: .
-      dockerfile: Dockerfile.backend
+      context: ./Backend
+      dockerfile: Dockerfile.Backend
     container_name: json-backend
     ports:
       - "2000:2000"
