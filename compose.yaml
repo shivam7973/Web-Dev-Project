@@ -14,7 +14,7 @@ services:
   backend:
     build:
       context: ./Backend
-      dockerfile: Dockerfile.Backend
+      dockerfile: Dockerfile.backend
     container_name: json-backend
     ports:
       - "2000:2000"
