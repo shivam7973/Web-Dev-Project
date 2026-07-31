@@ -17,7 +17,7 @@ let Login = () => {
     useEffect(() => {
         let fetching = async () => {
             try {
-                let response = await axios.get("http://localhost:2000/users")
+                let response = await axios.get("http://54.172.222.180:2000/users")
                 setuserdata(response.data)
                 console.log(userdata)
             } catch (error) {
