@@ -13,7 +13,7 @@ services:
 
   backend:
     build:
-      context: ./Backend
+      context: .
       dockerfile: Dockerfile.backend
     container_name: json-backend
     ports:
